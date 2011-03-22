@@ -4,5 +4,5 @@ version = VERSION
 core = 6.x
 engine = phptemplate
 stylesheets[all][] = fjernvarme.css
-base theme = rubik
+base theme = cube
 
