@@ -1,0 +1,7 @@
+name = Fjernvarme
+description = Theme for fjvu.dk
+version = VERSION
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = fjernvarme.css
+
