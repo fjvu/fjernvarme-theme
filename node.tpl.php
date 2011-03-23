@@ -1,5 +1,3 @@
-<?php $terms = fjernvarme_separate_terms($node->taxonomy); ?>
-
 <?php if (!empty($content) || !empty($title)): ?>
 
 <?php if (!empty($pre_object)) print $pre_object ?>
@@ -16,11 +14,16 @@
     <div class='<?php print $hook ?>-links clear-block'><?php print $links ?></div>
   <?php endif; ?>
   <?php if (!empty($taxonomy)): ?>
-    <div class="category clear-block"><?php print t('Category'); ?>: <?php print $terms['features_tags_documents_category']; ?></div>
-    <div class="tags clear-block"><?php print t('Tags'); ?>: <?php print $terms['features_tags_documents']; ?> </div>
-    <div class="author clear-block"><?php print t('Author'); ?>: <?php print $terms['features_tags_documents_authors']; ?> </div>
-    <div class="publisher clear-block"><?php print t('Publisher'); ?>: <?php print $terms['features_tags_documents_publisher']; ?> </div>
-    <div class="year clear-block"><?php print t('Year'); ?>: <?php print $terms['features_tags_documents_year']; ?> </div>
+    <?php if ($node->type == 'documents'): ?>
+      <?php $terms = fjernvarme_separate_terms($node->taxonomy); ?>
+      <div class="category clear-block"><?php print t('Category'); ?>: <?php print $terms['features_tags_documents_category']; ?></div>
+      <div class="tags clear-block"><?php print t('Tags'); ?>: <?php print $terms['features_tags_documents']; ?> </div>
+      <div class="author clear-block"><?php print t('Author'); ?>: <?php print $terms['features_tags_documents_authors']; ?> </div>
+      <div class="publisher clear-block"><?php print t('Publisher'); ?>: <?php print $terms['features_tags_documents_publisher']; ?> </div>
+      <div class="year clear-block"><?php print t('Year'); ?>: <?php print $terms['features_tags_documents_year']; ?> </div>
+    <?php else: ?>
+      <div class="terms"><?php print $terms; ?></div>
+    <?php endif; ?>
 
   <?php endif; ?>
 
