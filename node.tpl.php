@@ -1,18 +1,24 @@
-<?php if (!empty($content) || !empty($title)): ?>
+<?php
+// $Id: node.tpl.php,v 1.5 2007/10/11 09:51:29 goba Exp $
+?>
+<div id="node-<?php print $node->nid; ?>" class="node<?php if ($sticky) { print ' sticky'; } ?><?php if (!$status) { print ' node-unpublished'; } ?>">
 
-<?php if (!empty($pre_object)) print $pre_object ?>
+<?php print $picture ?>
 
-<div <?php if (!empty($attr)) print drupal_attributes($attr) ?>>
-  <?php if ($layout && (!empty($submitted) || !empty($links))): ?>
-    <div class='column-side'><div class='column-wrapper'>
+<?php if ($page == 0): ?>
+  <h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
+<?php endif; ?>
+
+  <?php if ($submitted): ?>
+    <span class="submitted"><?php print $submitted; ?></span>
   <?php endif; ?>
 
-  <?php if (!empty($submitted)): ?>
-    <div class='<?php print $hook ?>-submitted clear-block'><?php print $submitted ?></div>
-  <?php endif; ?>
-  <?php if (!empty($links)): ?>
-    <div class='<?php print $hook ?>-links clear-block'><?php print $links ?></div>
-  <?php endif; ?>
+  <div class="content clear-block">
+    <?php print $content ?>
+  </div>
+
+  <div class="clear-block">
+    <div class="meta">
   <?php if (!empty($taxonomy)): ?>
     <?php if ($node->type == 'documents'): ?>
       <?php $terms = fjernvarme_separate_terms($node->taxonomy); ?>
@@ -27,32 +33,11 @@
 
   <?php endif; ?>
 
-  <?php if ($layout && (!empty($submitted) || !empty($links))): ?>
-    </div></div>
-  <?php endif; ?>
-
-  <?php if ($layout): ?>
-    <div class='column-main'><div class='column-wrapper'>
-  <?php endif; ?>
-
-  <?php if (!empty($title) && !$page): ?>
-    <h2 class='<?php print $hook ?>-title'>
-      <?php if (!empty($new)): ?><a id='new' class='new'><?php print('New') ?></a><?php endif; ?>
-      <a href='<?php print $node_url ?>'><?php print $title ?></a>
-    </h2>
-  <?php endif; ?>
-
-  <?php if (!empty($content)): ?>
-    <div class='<?php print $hook ?>-content clear-block <?php if (!empty($is_prose)) print 'prose' ?>'>
-      <?php print $content ?>
     </div>
-  <?php endif; ?>
 
-  <?php if ($layout): ?>
-    </div></div>
-  <?php endif; ?>
+    <?php if ($links): ?>
+      <div class="links"><?php print $links; ?></div>
+    <?php endif; ?>
+  </div>
+
 </div>
-
-<?php if (!empty($post_object)) print 'what' . $post_object ?>
-
-<?php endif; ?>
