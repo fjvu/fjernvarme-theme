@@ -25,7 +25,7 @@
       <div class="category clear-block"><?php print t('Category'); ?>: <?php print $terms['features_tags_documents_category']; ?></div>
       <div class="tags clear-block"><?php print t('Tags'); ?>: <?php print $terms['features_tags_documents']; ?> </div>
       <div class="author clear-block"><?php print t('Author'); ?>: <?php print $terms['features_tags_documents_authors']; ?> </div>
-      <div class="publisher clear-block"><?php print t('Publisher'); ?>: <?php print $terms['features_tags_documents_publisher']; ?> </div>
+      <div class="publisher clear-block"><?php print t('Source'); ?>: <?php print $terms['features_tags_documents_publisher']; ?> </div>
       <div class="year clear-block"><?php print t('Year'); ?>: <?php print $terms['features_tags_documents_year']; ?> </div>
     <?php else: ?>
       <div class="terms"><?php print $terms; ?></div>
