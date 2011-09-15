@@ -1,0 +1,14 @@
+%style {
+  color: %text;
+}
+
+%style h2 {
+  color: %header-text;
+}
+
+.rounded-corners {
+  background-color: %background;
+}
+
+%style {
+}
