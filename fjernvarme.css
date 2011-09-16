@@ -101,15 +101,15 @@ h2 {
   padding: 0;
 }
 .page-nav-wrapper {
-  border-top: 1px solid #dbe3b4;
-  border-bottom: 1px solid #dbe3b4;
+  border-top: 1px solid #b4c960;
+  border-bottom: 1px solid #b4c960;
   margin-bottom: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
 .page-closure-wrapper {
   margin-top: 1.5em;
-  border-top: 1px solid #dbe3b4;
+  border-top: 1px solid #b4c960;
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: center;
@@ -139,6 +139,12 @@ h2 {
 .green-box {
   background-color: #b4c960;
   border: 1px solid #b4c960;
+}
+.green-box h2 {
+  color: black;
+}
+.green-box a {
+  color: black;
 }
 .yellow-box {
   border: 1px solid #feef70;
@@ -176,7 +182,7 @@ h2 {
 }
 .page-left h2 {
   text-transform: uppercase;
-  color: #dbe3b4;
+  color: #b4c960;
 }
 .page-left select {
   width: 165px;
@@ -192,7 +198,7 @@ h2 {
   border-bottom: none;
 }
 .page-left ul li {
-  border-bottom: 1px dotted #dbe3b4;
+  border-bottom: 1px dotted #b4c960;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-left: 0px;

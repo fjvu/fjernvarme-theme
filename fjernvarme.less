@@ -72,7 +72,7 @@ h2 {
   }
 
   a {
-    color: #b4c960;
+    color: @color-green;
   }
   .rounded-corners h2 {
     margin-top: 0;
@@ -132,8 +132,8 @@ h2 {
 }
 
 .page-nav-wrapper {
-  border-top: 1px solid #dbe3b4;
-  border-bottom: 1px solid #dbe3b4;
+  border-top: 1px solid @color-green;
+  border-bottom: 1px solid @color-green;
   margin-bottom: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;  
@@ -141,7 +141,7 @@ h2 {
 
 .page-closure-wrapper {
   margin-top: 1.5em;
-  border-top: 1px solid #dbe3b4;
+  border-top: 1px solid @color-green;
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: center;
@@ -175,6 +175,12 @@ h2 {
 .green-box {
   background-color: @color-green;
   border: 1px solid @color-green;
+  h2 {
+    color: black;
+  }
+  a {
+    color: black;
+  }  
 }
 
 .yellow-box {
@@ -221,7 +227,7 @@ h2 {
 .page-left {
   h2 {
     text-transform: uppercase;
-    color: #dbe3b4;
+    color: @color-green;
   }
   select {
     width: 165px;
@@ -237,7 +243,7 @@ h2 {
     border-bottom: none;
   }  
   ul li {
-    border-bottom: 1px dotted #dbe3b4;
+    border-bottom: 1px dotted @color-green;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-left: 0px;
