@@ -202,10 +202,21 @@ h2 {
   margin-left: 5px;
 }
 th, td {
-  padding: 10px;
+  padding: 10px 0;
 }
-th {
-  background: #b4c960;
+table,
+tr,
+th,
+td {
+  background: transparent !important;
+}
+.views-table td {
+  background: white !important;
+  border-bottom: 1px solid #b4c960;
+}
+.views-table .views-field-title b {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .page-body-inner li {
   list-style-type: square;
