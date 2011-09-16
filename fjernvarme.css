@@ -84,7 +84,7 @@ h2 {
   text-decoration: none;
   margin: 0px;
   padding: 0px 10px 5px 0px;
-  color: #cccccc;
+  color: #a29898;
   text-transform: uppercase;
 }
 .page-nav li a:hover {
@@ -113,11 +113,11 @@ h2 {
   padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: center;
-  color: #cccccc;
+  color: #a29898;
   font-size: 0.9em;
 }
 .page-closure a {
-  color: #cccccc;
+  color: #a29898;
 }
 #block-search-form input {
   border: 1px solid #ddd;
@@ -149,8 +149,8 @@ h2 {
   border: 1px solid #e7e35d;
 }
 .grey-box {
-  border: 1px solid #cccccc;
-  background-color: #cccccc;
+  border: 1px solid #a29898;
+  background-color: #a29898;
   color: white;
 }
 .grey-box h2 {
