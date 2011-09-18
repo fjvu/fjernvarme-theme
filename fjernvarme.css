@@ -93,10 +93,6 @@ h2 {
 .page-nav li ul {
   display: none;
 }
-.page-body-inner {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .page-frontpage .page-body-inner {
   padding: 0;
 }
@@ -150,9 +146,21 @@ h2 {
   border: 1px solid #feef70;
   background-color: #feef70;
 }
+.yellow-box h2 {
+  color: black;
+}
+.yellow-box a {
+  color: black;
+}
 .lightgreen-box {
   background-color: #e7e35d;
   border: 1px solid #e7e35d;
+}
+.lightgreen-box h2 {
+  color: black;
+}
+.lightgreen-box a {
+  color: black;
 }
 .grey-box {
   border: 1px solid #a29898;
@@ -179,6 +187,12 @@ h2 {
   margin: 0;
   list-style-type: none;
   margin-bottom: 0.7em;
+}
+.sidebar-box select {
+  width: 165px;
+}
+.sidebar-box input {
+  width: 150px;
 }
 .page-left h2 {
   text-transform: uppercase;

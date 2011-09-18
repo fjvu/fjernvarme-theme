@@ -122,11 +122,6 @@ h2 {
   }
 }
 
-.page-body-inner {
-  padding-left: 10px;
-  padding-right: 10px;  
-}
-
 .page-frontpage .page-body-inner {
   padding: 0;
 }
@@ -186,11 +181,23 @@ h2 {
 .yellow-box {
   border: 1px solid @color-yellow;
   background-color: @color-yellow;
+  h2 {
+    color: black;
+  }
+  a {
+    color: black;
+  }  
 }
 
 .lightgreen-box {
   background-color: @color-lightgreen;
   border: 1px solid @color-lightgreen;
+  h2 {
+    color: black;
+  }
+  a {
+    color: black;
+  }  
 }
 
 .grey-box {
@@ -224,6 +231,15 @@ h2 {
   }  
 }
 
+.sidebar-box {
+  select {
+    width: 165px;
+  }
+  input {
+    width: 150px;
+  }
+}
+
 .page-left {
   h2 {
     text-transform: uppercase;
@@ -253,6 +269,7 @@ h2 {
     margin-left: 5px;
   }  
 }
+
 
 th, td {
   padding: 10px 0;
