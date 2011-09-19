@@ -337,3 +337,7 @@ span.file {
 .views-field-field-article-picture {
   margin: 1em 0 0 0;
 }
+.node-type-story .field-name-field-article-picture img {
+  float: right;
+  margin: 0 0 1em 1em;
+}
