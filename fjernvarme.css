@@ -351,3 +351,7 @@ td.views-field-title br {
 td.views-field-title a {
   display: block;
 }
+.page-branding .pane-logintoboggan-logintoboggan-logged-in {
+  float: right;
+  margin-right: 1em;
+}
