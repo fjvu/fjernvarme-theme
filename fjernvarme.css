@@ -57,18 +57,22 @@ h2 {
 .page-body .rounded-corners h2 {
   margin-top: 0;
 }
-#views_slideshow_pager_field_item_frontpage_options-block_0 {
+#views_slideshow_pager_field_item_bottom_frontpage_options-block_0 {
   background: #feef70;
 }
-#views_slideshow_pager_field_item_frontpage_options-block_1 {
+#views_slideshow_pager_field_item_bottom_frontpage_options-block_1 {
   background: #e7e35d;
 }
-#views_slideshow_pager_field_item_frontpage_options-block_2 {
+#views_slideshow_pager_field_item_bottom_frontpage_options-block_2 {
   background: #b4c960;
 }
 .page-branding {
   padding-top: 1.5em;
   padding-bottom: 1em;
+}
+.page-branding .pane-logintoboggan-logintoboggan-logged-in {
+  float: right;
+  margin-right: 1em;
 }
 .page-nav h2 {
   display: none;
@@ -350,8 +354,4 @@ td.views-field-title br {
 }
 td.views-field-title a {
   display: block;
-}
-.page-branding .pane-logintoboggan-logintoboggan-logged-in {
-  float: right;
-  margin-right: 1em;
 }
