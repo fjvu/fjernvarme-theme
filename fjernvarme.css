@@ -104,15 +104,26 @@ body.node-type-story img {
 .page-nav li a {
   text-decoration: none;
   margin: 0px;
-  padding: 0px 10px 5px 0px;
+  padding: 5px 5px;
   color: #a29898;
   text-transform: uppercase;
 }
 .page-nav li a:hover {
   color: black;
 }
+.page-nav li .active-trail {
+  background: #eee;
+}
 .page-nav li ul {
   display: none;
+}
+.page-nav li.first {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.page-nav li.first a {
+  padding-left: 0px;
+  margin-left: 0px;
 }
 .page-frontpage .page-body-inner {
   padding: 0;
@@ -211,6 +222,10 @@ body.node-type-story img {
 }
 .front .views-field-field-article-picture {
   margin: 1em 0 0 0;
+}
+.front .news-box p {
+  margin: 0.5em 0 0 0;
+  font-size: 0.9em;
 }
 .sidebar-box select {
   width: 165px;
@@ -371,4 +386,7 @@ input.form-submit, a.button {
 }
 .page-branding #search-form .form-text {
   width: 154px;
+}
+a.active {
+  font-weight: bold;
 }
