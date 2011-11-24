@@ -218,31 +218,37 @@ body.node-type-story img {
 .sidebar-box input {
   width: 150px;
 }
-.page-left h2 {
+.page-right-inner {
+  margin-left: 1em;
+}
+.page-left-inner {
+  margin-right: 1em;
+}
+.page-left-inner h2 {
   text-transform: uppercase;
   color: #b4c960;
 }
-.page-left select {
+.page-left-inner select {
   width: 165px;
 }
-.page-left input {
+.page-left-inner input {
   width: 150px;
 }
-.page-left a {
+.page-left-inner a {
   text-decoration: none;
   color: black;
 }
-.page-left ul li ul li {
+.page-left-inner ul li ul li {
   border-bottom: none;
 }
-.page-left ul li {
+.page-left-inner ul li {
   border-bottom: 1px dotted #b4c960;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-left: 1em;
   list-style-position: outside;
 }
-.page-left ul {
+.page-left-inner ul {
   margin-left: 5px;
 }
 table,
