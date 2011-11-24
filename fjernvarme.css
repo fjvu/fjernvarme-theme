@@ -112,7 +112,7 @@ body.node-type-story img {
   color: black;
 }
 .page-nav li .active-trail {
-  background: #eee;
+  color: black;
 }
 .page-nav li ul {
   display: none;
