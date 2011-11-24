@@ -1,5 +1,5 @@
-name = Fjernvarme2
-description = Theme for fjvu.dk
+name = Fjernvarme
+description = Theme for fjvu.dk created in 2011.
 version = VERSION
 core = 7.x
 engine = phptemplate

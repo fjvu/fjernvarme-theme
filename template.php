@@ -2,7 +2,7 @@
 /**
  * Implements theme_preprocess_page(&$variables);
  */
-function fjernvarme2_preprocess_html(&$variables) {
+function fjernvarme_preprocess_html(&$variables) {
   drupal_add_css(drupal_get_path('theme', 'precision') .'/css/grid.css');
   drupal_add_js('
 function hasBorderRadius() {
