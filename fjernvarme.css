@@ -150,12 +150,6 @@ body.node-type-story img {
 #block-search-form input {
   border: 1px solid #ddd;
 }
-#block-views-exp-documents-list-page-1 input {
-  width: 165px;
-}
-#block-views-exp-documents-list-page-1 select {
-  width: 165px;
-}
 .rounded-corners {
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -265,6 +259,9 @@ body.node-type-story img {
 }
 .page-left-inner ul {
   margin-left: 5px;
+}
+.page-aside-alpha-inner {
+  margin-right: 1em;
 }
 table,
 tr,
