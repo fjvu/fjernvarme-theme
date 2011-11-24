@@ -20,6 +20,10 @@ p, td, li {
   line-height: 1.4em;    
 }
 
+ul {
+  list-style-position: inside;   
+}
+
 h2 {
   font-size: 1.2em;
   margin-bottom: 0.3em;
@@ -233,7 +237,10 @@ h2 {
     margin: 0;
     list-style-type: none;
     margin-bottom: 0.7em;
-  }  
+  }
+  .views-field-field-article-picture  {
+    margin: 1em 0 0 0;
+  }
 }
 
 .sidebar-box {
@@ -267,21 +274,20 @@ h2 {
     border-bottom: 1px dotted @color-green;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    margin-left: 0px;
-    list-style-position: inside;
+    margin-left: 1em;
+    list-style-position: outside;
   }  
   ul {
     margin-left: 5px;
   }  
 }
 
+table, tr, th, td {
+  background: transparent !important;
+}
 
 th, td {
   padding: 10px 0;
-}
-
-table, tr, th, td {
-  background: transparent !important;
 }
 
 .views-table {
@@ -295,19 +301,49 @@ table, tr, th, td {
   }
 }
 
-
-
 .page-body-inner {
   li {
+    margin-left: 1em;
     list-style-type: square;
-    list-style-position: inside;  
+    list-style-position: outside;  
   }
   p, ul, table {
     margin-bottom: 0.5em;
   }
 }
 
+.field-type-taxonomy-term-reference {
+  .field-item {
+    display: inline;
+    margin-right: 10px;
+  }
+}
 
+div.page-body ul.links {
+  display: block;
+  margin: 1em 0 0 0;
+}
+
+div.page-body ul.links li {
+  display: block;
+  padding-left: 0;
+}
+
+span.file {
+  margin: 1em 0 1em 0;
+  display: block;
+  background: #eee;
+  padding: 1em;
+}
+
+.submitted {
+  margin: 0 0 1em 0;
+  font-size: 0.9em;
+}
+
+td.views-field-title br {
+  display: none;
+}
 
 /* SEARCH FORM */
 #search-form {
@@ -379,55 +415,4 @@ a.button {
 
 .page-branding #search-form .form-text {
   width: 154px;
-}
-
-.field-type-taxonomy-term-reference {
-  .field-item {
-    display: inline;
-    margin-right: 10px;
-  }
-}
-
-div.page-body ul.links {
-  display: block;
-  margin: 1em 0 0 0;
-}
-
-div.page-body ul.links li {
-  display: block;
-  padding-left: 0;
-}
-
-span.file {
-  margin: 1em 0 1em 0;
-  display: block;
-  background: #eee;
-  padding: 1em;
-}
-
-.submitted {
-  margin: 0 0 1em 0;
-  font-size: 0.9em;
-}
-
-.front .views-field-field-article-picture  {
-  margin: 1em 0 0 0;
-}
-
-.node-type-story div.field-name-field-article-picture img {
-  float: right;
-  margin: 0 0 1em 1em;
-}
-
-td.views-field-title img {
-  float: right;
-  margin: 0 0 0 1em;
-}
-
-td.views-field-title br {
-  display: none;
-}
-
-td.views-field-title a {
-  display: block;
 }
