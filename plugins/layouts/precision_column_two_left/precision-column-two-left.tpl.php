@@ -18,18 +18,18 @@
   </div>
 <?php endif; ?>
 
-<?php if (!empty($content['aside_alpha'])): ?>
-  <div class="page-aside-alpha grid-12 omega">
-    <div class="sub-region page-aside-alpha-inner clearfix">
-      <?php print render($content['aside_alpha']); ?>
-    </div>
-  </div>
-<?php endif; ?>
-
 <?php if (!empty($content['main'])): ?>
   <div class="page-main grid-36 alpha">
     <div class="sub-region page-main-inner clearfix">
       <?php print render($content['main']); ?>
+    </div>
+  </div>
+<?php endif; ?>
+
+<?php if (!empty($content['aside_alpha'])): ?>
+  <div class="page-aside-alpha grid-12 omega">
+    <div class="sub-region page-aside-alpha-inner clearfix">
+      <?php print render($content['aside_alpha']); ?>
     </div>
   </div>
 <?php endif; ?>

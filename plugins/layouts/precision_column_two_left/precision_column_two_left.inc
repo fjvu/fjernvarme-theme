@@ -3,7 +3,7 @@
 $plugin = array(
   'title' => t('Precision two columns left'),
   'theme' => 'precision_column_two_left',
-  'icon' => 'precision-column-two_left.png',
+  'icon' => 'precision-column-two-left.png',
   'category' => 'Precision',
   'regions' => array(
     'header_alpha' => t('Header alpha'),
