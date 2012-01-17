@@ -227,37 +227,37 @@ body.node-type-story img {
 .sidebar-box input {
   width: 150px;
 }
-.page-right-inner {
+.page-right-inner, .page-aside-beta-inner {
   margin-left: 1em;
 }
-.page-left-inner {
+.page-left-inner, .page-aside-alpha-inner {
   margin-right: 1em;
 }
-.page-left-inner h2 {
+.page-left-inner h2, .page-aside-alpha-inner h2 {
   text-transform: uppercase;
   color: #b4c960;
 }
-.page-left-inner select {
+.page-left-inner select, .page-aside-alpha-inner select {
   width: 165px;
 }
-.page-left-inner input {
+.page-left-inner input, .page-aside-alpha-inner input {
   width: 150px;
 }
-.page-left-inner a {
+.page-left-inner a, .page-aside-alpha-inner a {
   text-decoration: none;
   color: black;
 }
-.page-left-inner ul li ul li {
+.page-left-inner ul li ul li, .page-aside-alpha-inner ul li ul li {
   border-bottom: none;
 }
-.page-left-inner ul li {
+.page-left-inner ul li, .page-aside-alpha-inner ul li {
   border-bottom: 1px dotted #b4c960;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-left: 1em;
   list-style-position: outside;
 }
-.page-left-inner ul {
+.page-left-inner ul, .page-aside-alpha-inner ul {
   margin-left: 5px;
 }
 .page-aside-alpha-inner {
